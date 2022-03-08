@@ -1,0 +1,24 @@
+/* circle loading  */
+.section2{
+    height:50vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#circle{
+    width: 60px;
+    height: 60px;
+    border: 10px solid rgba(255 ,255,255,0.2);
+    border-radius:50%;
+    border-top-color: white;
+    border-color: lineargradient(45deg ,red ,green);
+    animation: spin1 1.4s linear infinite;
+ 
+}
+@keyframes spin1 {
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,38 @@
+/* css 3dot animation */
+.section3{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dotContainer{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100px;
+
+}
+.dot {
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    margin:3px;
+}
+.dot1{
+    background-color: #543ae9;
+    animation: jump-up 1s 0.2s linear infinite;
+}
+.dot2{
+    background-color: #ffd64a;
+    animation: jump-up 1s 0.4s linear infinite;
+}
+.dot3{
+    background-color: #e06767;
+    animation: jump-up 1s 0.6s linear infinite;
+}
+@keyframes jump-up{
+    50%
+    {
+        transform: translate(0,-35px);
+    }
+}
